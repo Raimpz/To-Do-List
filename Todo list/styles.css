@@ -1,0 +1,89 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body{
+  margin: 0;
+}
+header {
+  background-color: #2196F3;
+  color: white;
+  padding: 0 5%;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  min-height: 100vh;
+}
+
+/* SECTION */
+section{
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#todoHolder{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 500px;
+}
+
+button{
+  margin: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid black;
+  transition: 0.25s all linear;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover{
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+.todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.todo div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todo div p {
+  margin: 0 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.todo div input{
+  cursor: pointer;
+}
+.todo i{
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 20px;
+  color: rgb(247, 12, 12);
+  transition: 0.25s all linear;
+}
+.todo i:hover{
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.done{
+  text-decoration: line-through;
+}
